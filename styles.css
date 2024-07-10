@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    text-align: center;
+    font-family: "Red Hat Display", sans-serif;
+}
+/* layout */
+
+.container{
+    width: 350px;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.container .top img{
+    width: 100%;
+    border-radius: 0; 
+}
+.container .bottom{
+    padding: 10px 10px;
+    margin: 15px;
+}
+.music-desc-text{
+    display: flex;
+    flex-direction: column;
+}
+.bottom-two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 15px;
+    background-color: hsla(225, 100%, 94%,0.5);
+    border-radius: 1em;
+}
+.music-desc{
+    display: flex;
+    flex-direction: row;
+}
+/* general styling */
+
+h1{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1.5rem;
+    color: hsl(223, 47%, 23%);
+}
+p{
+    padding: 0 1em;  
+    color:  hsl(224, 23%, 55%);
+}
+
+.music-desc img{
+    margin-right: 1em;
+}
+.music-desc-text .black-text{
+    font-weight: bold;
+}
+.music-desc-text .light-text{
+    font-weight: lighter;
+    color:hsla(223, 47%, 23%,0.8);
+}
+.bottom-two .underline-text{
+    text-decoration: underline;
+    /* font-weight: bold; */
+}
+
+.payment-btn{
+    width:100%;
+    padding: 10px;
+    margin-top: 1.5rem;
+    background-color:hsl(245, 75%, 52%);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: none;
+
+}
+.cancel-btn{
+    width:100%;
+    padding: 10px;
+    margin-top: 0.5rem;
+    background-color:hsla(225, 100%, 94%,0.5);
+    color: hsl(224, 23%, 55%);
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.payment-btn:hover{
+    background-color: hsla(245, 75%, 52%,0.5);
+    cursor: pointer;
+}
+
+.cancel-btn:hover{
+    background-color: hsla(225, 100%, 94%,0.2);
+    cursor: pointer;
+}
+.underline-text:hover{
+    color:hsl(245, 75%, 52%);
+    cursor: pointer;
+}
+
+@media (max-width:750px){
+    body{
+        background-image: url('images/pattern-background-mobile.svg');
+    }
+}
